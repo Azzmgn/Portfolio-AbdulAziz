@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Abdul Aziz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
+
+    <!-- Header Section -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#content">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>  
+        </nav>
+        <div class="header-text">
+          <p>Siliwangi University Student</p>
+          <h1>Hi, I'm <span>Aziz</span><br />From Tasikmalaya</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Mahasiswa aktif Universitas Siliwangi dengan fokus pada bidang
+              UI/UX Design. Memiliki ketertarikan pada integrasi teknologi,
+              desain, dan kreativitas dalam menciptakan pengalaman digital yang
+              fungsional dan estetis. Aktif mengembangkan website, fotografi,
+              serta keterampilan pendukung di bidang teknologi digital.
+            </p>
+
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                <li><span>Web Development</span><br>Building Responsive Websites</li>
+                <li><span>Fotografi & Videografi</span><br>Mengambil Gambar Profesional</li>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2024 - Current</span><br>Freelance Fotografi & Videografi</li>
+                <li><span>2023 - 2024</span><br>Internship di PT.Telkom Kota Tasikmalaya</li>
+                <li><span>2022 - 2023</span><br>Leader of Media Online Al-huda</li>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024 - Current</span><br>Siliwangi University Student - Informatic</li>
+                <li><span>2021 - 2024</span><br>Smk Al-huda Sariwangi - Multimedia</li>
+                <li><span>2023</span><br>Class Photografi & Videografi</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>Membuat desain website yang menarik, responsif, dan user-friendly untuk berbagai kebutuhan bisnis dan personal.</p>
+            <a href="#">Read More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Membuat desain website yang menarik, responsif, dan user-friendly untuk berbagai kebutuhan bisnis dan personal.</p>
+            <a href="#">Read More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-camera"></i>
+            <h2>Photography & Videography</h2>
+            <p>Mengambil gambar dan video profesional untuk kebutuhan pribadi maupun bisnis.</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Section -->
+       <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="/images/1.png"> 
+              <div class="layer">
+                <h3>Design Online Shopping</h3>
+                <p>Desain dan pengembangan aplikasi web Thinksale yang responsif dan user-friendly.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+             <div class="work">
+              <img src="/images/2.png"> 
+              <div class="layer">
+                <h3>Design Web Smartwarehous</h3>
+                <p>Desain dan pengembangan website Smartwarehous, pemeriksaan kualitas produk.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+             <div class="work">
+              <img src="/images/3.png"> 
+              <div class="layer">
+                <h3>Design MobileApp</h3>
+                <p>Desain dan pengembangan aplikasi mobile untuk menentukan keluarga yang ideal.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See More</a>
+        </div>
+       </div>
+    </div>
+
+    <!-- Contact Section -->
+     <div id="content">
+      <div class="container">
+        <div class="row">
+          <div class="content-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>azizmugni28@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone-flip"></i>+62 821-2223-2424</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="content-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Send Message</button>
+            </form>
+            <span class="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 202 Abdul Aziz.<i class="fa-solid fa-heart"></i> All rights reserved.</p>
+      </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
